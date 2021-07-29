@@ -22,7 +22,7 @@ import javax.ws.rs.core.Response;
  * This class implements a RESTFUL API.
  */
 @javax.ejb.Stateless
-@javax.ws.rs.Path("cst8218.kund0003.entity.sprite")
+@javax.ws.rs.Path("ass2.entity.sprite")
 public class SpriteFacadeREST extends AbstractFacade<Sprite> {
     
     private String okMessage = "Success";

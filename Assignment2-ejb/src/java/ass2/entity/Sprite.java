@@ -5,17 +5,25 @@
  */
 package ass2.entity;
 
+import ass2.colourconverter.*;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.io.Serializable;
 import java.util.Random;
+import javax.json.bind.annotation.JsonbTypeDeserializer;
+import javax.json.bind.annotation.JsonbTypeSerializer;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Min;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 
 /**
  *
@@ -27,6 +35,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @Entity
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Sprite implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -62,6 +71,12 @@ public class Sprite implements Serializable {
     private Integer dx;
     @Column
     private Integer dy;
+    
+    
+    @XmlElement
+    @XmlJavaTypeAdapter(ColorAdapter.class)
+    @JsonbTypeDeserializer(JsonColorDeserializer.class)
+    @JsonbTypeSerializer(JsonColorSerializer.class)
     @Column
     private Color color = Color.BLUE;
 
@@ -109,6 +124,9 @@ public class Sprite implements Serializable {
     }
 
     public int getPanelWidth() {
+        if (this.panelWidth == null){
+            return 0;
+        }
         return panelWidth;
     }
 
@@ -117,6 +135,9 @@ public class Sprite implements Serializable {
     }
 
     public int getPanelHeight() {
+        if (this.panelHeight == null){
+            return 0;
+        }
         return panelHeight;
     }
 
@@ -125,6 +146,9 @@ public class Sprite implements Serializable {
     }
 
     public int getX() {
+        if (this.x == null){
+            return 0;
+        }
         return x;
     }
 
@@ -133,6 +157,9 @@ public class Sprite implements Serializable {
     }
 
     public int getY() {
+        if (this.y == null){
+            return 0;
+        }
         return y;
     }
 
@@ -141,6 +168,9 @@ public class Sprite implements Serializable {
     }
 
     public int getDx() {
+        if (this.dx == null){
+            return 0;
+        }
         return dx;
     }
 
@@ -149,6 +179,9 @@ public class Sprite implements Serializable {
     }
 
     public int getDy() {
+        if (this.dy == null){
+            return 0;
+        }
         return dy;
     }
 

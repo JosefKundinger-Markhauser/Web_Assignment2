@@ -1,8 +1,6 @@
 package ass2.presentation;
 
 import ass2.entity.Sprite;
-import ass2.entity.Sprite;
-import ass2.entity.SpriteFacade;
 import ass2.entity.SpriteFacade;
 import ass2.resources.JsfUtil;
 import ass2.resources.PaginationHelper;
