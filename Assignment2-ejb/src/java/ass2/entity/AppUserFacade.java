@@ -5,21 +5,19 @@
  */
 package ass2.entity;
 
+import ass2.entity.AbstractFacade;
+import ass2.entity.AppUser;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author Joey Kundinger-Markhauser
- * @author Patrick Czermak
- * @version 2.0
- * 
- * This class holds the entity manager instance, and it sets the 
- * persistence unit for the project.
+ * @author Josef
  */
 @Stateless
-public class SpriteFacade extends AbstractFacade<Sprite> {
+public class AppUserFacade extends AbstractFacade<AppUser> {
+
     @PersistenceContext(unitName = "Assignment2-ejbPU")
     private EntityManager em;
 
@@ -28,8 +26,8 @@ public class SpriteFacade extends AbstractFacade<Sprite> {
         return em;
     }
 
-    public SpriteFacade() {
-        super(Sprite.class);
+    public AppUserFacade() {
+        super(AppUser.class);
     }
     
 }
