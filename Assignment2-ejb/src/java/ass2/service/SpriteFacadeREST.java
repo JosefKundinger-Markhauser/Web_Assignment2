@@ -27,7 +27,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
     
     private String okMessage = "Success";
 
-    @PersistenceContext(unitName = "SpriteJoey-ejbPU")
+    @PersistenceContext(unitName = "Assignment2-ejbPU")
     private EntityManager em;
 
     public SpriteFacadeREST() {
