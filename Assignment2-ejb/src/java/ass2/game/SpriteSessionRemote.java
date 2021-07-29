@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cst8218.kund0003.game;
-import cst8218.kund0003.entity.Sprite;
+package ass2.game;
+import ass2.entity.Sprite;
 import java.awt.event.MouseEvent;
 import java.rmi.RemoteException;
 import java.util.List;

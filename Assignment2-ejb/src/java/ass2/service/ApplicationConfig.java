@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package ass2.service;
 
 import java.util.Set;
 
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is used to setup the RESTFUL API.
  */

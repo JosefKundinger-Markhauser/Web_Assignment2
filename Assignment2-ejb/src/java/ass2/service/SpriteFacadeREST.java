@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package ass2.service;
 
-import cst8218.kund0003.entity.Sprite;
-import cst8218.kund0003.entity.AbstractFacade;
+import ass2.entity.Sprite;
+import ass2.entity.AbstractFacade;
 import java.util.List;
 import java.util.Objects;
 import javax.persistence.EntityManager;
@@ -16,7 +16,8 @@ import javax.ws.rs.core.Response;
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class implements a RESTFUL API.
  */

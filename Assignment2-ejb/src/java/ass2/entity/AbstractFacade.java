@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cst8218.kund0003.entity;
+package ass2.entity;
 
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -11,7 +11,8 @@ import javax.persistence.EntityManager;
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is an abstract way to interact with the entity manager.
  */

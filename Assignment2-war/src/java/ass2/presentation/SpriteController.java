@@ -1,11 +1,11 @@
-package presentation;
+package ass2.presentation;
 
-import cst8218.kund0003.entity.Sprite;
-import cst8218.kund0003.entity.Sprite;
-import cst8218.kund0003.entity.SpriteFacade;
-import cst8218.kund0003.entity.SpriteFacade;
-import resources.util.JsfUtil;
-import resources.util.PaginationHelper;
+import ass2.entity.Sprite;
+import ass2.entity.Sprite;
+import ass2.entity.SpriteFacade;
+import ass2.entity.SpriteFacade;
+import ass2.resources.JsfUtil;
+import ass2.resources.PaginationHelper;
 
 import java.io.Serializable;
 import java.util.ResourceBundle;
@@ -23,7 +23,8 @@ import javax.faces.model.SelectItem;
 /**
  * 
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is the controller for the JSF pages.
  */
@@ -34,7 +35,7 @@ public class SpriteController implements Serializable {
     private Sprite current;
     private DataModel items = null;
     @Inject
-    private cst8218.kund0003.entity.SpriteFacade ejbFacade;
+    private ass2.entity.SpriteFacade ejbFacade;
     private PaginationHelper pagination;
     private int selectedItemIndex;
 

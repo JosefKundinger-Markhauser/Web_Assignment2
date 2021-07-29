@@ -1,7 +1,7 @@
-package cst8218.kund0003.game;
+package ass2.game;
 
-import cst8218.kund0003.entity.Sprite;
-import cst8218.kund0003.entity.SpriteFacade;
+import ass2.entity.Sprite;
+import ass2.entity.SpriteFacade;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.util.List;
@@ -12,7 +12,8 @@ import javax.ejb.Singleton;
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class sets up the sprite game, and then continuously updates the sprite's
  * dx and dy values.

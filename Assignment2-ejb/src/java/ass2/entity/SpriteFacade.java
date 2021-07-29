@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cst8218.kund0003.entity;
+package ass2.entity;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -12,7 +12,8 @@ import javax.persistence.PersistenceContext;
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class holds the entity manager instance, and it sets the 
  * persistence unit for the project.

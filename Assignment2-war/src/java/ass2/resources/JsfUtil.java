@@ -1,4 +1,4 @@
-package resources.util;
+package ass2.resources;
 
 import java.util.List;
 import javax.faces.application.FacesMessage;
@@ -10,7 +10,8 @@ import javax.faces.model.SelectItem;
 /**
  * 
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is used as a utility class for the JSF pages.
  */
