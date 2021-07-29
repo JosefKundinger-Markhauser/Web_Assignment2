@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cst8218.kund0003.entity;
+package ass2.entity;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -20,7 +20,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is used to store the values of the Sprite object.
  */

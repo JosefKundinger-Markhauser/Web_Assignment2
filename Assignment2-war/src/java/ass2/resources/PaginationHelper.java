@@ -1,11 +1,12 @@
-package resources.util;
+package ass2.resources;
 
 import javax.faces.model.DataModel;
 
 /**
  * 
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is used as a basic page navigation helper for the JSF pages.
  */

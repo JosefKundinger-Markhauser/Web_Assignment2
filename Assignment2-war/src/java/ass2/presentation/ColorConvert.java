@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package presentation;
+package ass2.presentation;
 
 import java.awt.Color;
 import javax.faces.component.UIComponent;
@@ -14,7 +14,8 @@ import javax.faces.convert.FacesConverter;
 /**
  *
  * @author Joey Kundinger-Markhauser
- * @version 1.0
+ * @author Patrick Czermak
+ * @version 2.0
  * 
  * This class is used to convert a string to a Color object and to convert a
  * Color to a string.

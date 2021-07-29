@@ -1,6 +1,6 @@
-package cst8218.kund0003.game;
+package ass2.game;
 
-import cst8218.kund0003.entity.Sprite;
+import ass2.entity.Sprite;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.util.List;
