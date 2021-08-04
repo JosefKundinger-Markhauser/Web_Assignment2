@@ -6,6 +6,11 @@
 package ass2.service;
 
 import java.util.Set;
+import javax.enterprise.context.ApplicationScoped;
+import javax.inject.Named;
+import javax.security.enterprise.authentication.mechanism.http.BasicAuthenticationMechanismDefinition;
+import javax.security.enterprise.identitystore.DatabaseIdentityStoreDefinition;
+import javax.security.enterprise.identitystore.PasswordHash;
 
 /**
  *
@@ -15,6 +20,16 @@ import java.util.Set;
  * 
  * This class is used to setup the RESTFUL API.
  */
+@DatabaseIdentityStoreDefinition(
+        dataSourceLookup= "${'java:comp/DefaultDataSource'}",
+        callerQuery= "#{'SELECT PASSWORD FROM APP.APPUSER WHERE USERID= ?'}",
+        groupsQuery= "SELECT GROUPNAME FROM APP.APPUSER WHERE USERID= ?",
+        hashAlgorithm= PasswordHash.class,
+        priority = 10
+)
+@BasicAuthenticationMechanismDefinition
+@ApplicationScoped
+@Named
 @javax.ws.rs.ApplicationPath("webresources")
 public class ApplicationConfig extends javax.ws.rs.core.Application {
 
