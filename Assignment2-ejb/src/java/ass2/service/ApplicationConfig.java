@@ -6,7 +6,7 @@
 package ass2.service;
 
 import java.util.Set;
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Named;
 import javax.security.enterprise.authentication.mechanism.http.BasicAuthenticationMechanismDefinition;
 import javax.security.enterprise.identitystore.DatabaseIdentityStoreDefinition;
