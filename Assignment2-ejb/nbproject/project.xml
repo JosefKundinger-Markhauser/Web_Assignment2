@@ -6,11 +6,13 @@
             <name>Assignment2-ejb</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <included-library dirs="200">libs.javaee-api-8.0.classpath</included-library>
+            <included-library dirs="200">libs.hamcrest.classpath</included-library>
+            <included-library dirs="200">libs.junit_4.classpath</included-library>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
             <test-roots>
-                <root id="test.src.dir"/>
+                <root id="test.Testing%20Packages.dir"/>
             </test-roots>
         </data>
     </configuration>
