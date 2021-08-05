@@ -38,7 +38,7 @@ public class AppUserTest {
     @After
     public void tearDown() {
     }
-    
+
     @Test
     public void userIdTest() {
         System.out.println("Testing userId");
