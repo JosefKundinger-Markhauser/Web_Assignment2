@@ -9,6 +9,8 @@ import ass2.entity.Sprite;
 import ass2.entity.AbstractFacade;
 import java.util.List;
 import java.util.Objects;
+import javax.annotation.security.DeclareRoles;
+import javax.annotation.security.RolesAllowed;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.core.Response;
@@ -23,6 +25,7 @@ import javax.ws.rs.core.Response;
  */
 @javax.ejb.Stateless
 @javax.ws.rs.Path("ass2.entity.sprite")
+@DeclareRoles({"Admin", "RestGroup"})
 public class SpriteFacadeREST extends AbstractFacade<Sprite> {
     
     private String okMessage = "Success";
@@ -41,6 +44,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
      * @return Error response message when an error occurs, or okay message when successful.
      */
     @javax.ws.rs.PUT
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Path("{id}")
     @javax.ws.rs.Consumes({javax.ws.rs.core.MediaType.APPLICATION_XML, javax.ws.rs.core.MediaType.APPLICATION_JSON})
     public Response put(@javax.ws.rs.PathParam("id") Long id, Sprite newSprite) {
@@ -63,6 +67,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
      * @return Error response message when an error occurs, or okay message when successful.
      */
     @javax.ws.rs.POST
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Path("{id}")
     @javax.ws.rs.Consumes({javax.ws.rs.core.MediaType.APPLICATION_XML, javax.ws.rs.core.MediaType.APPLICATION_JSON})
     public Response post(@javax.ws.rs.PathParam("id") Long id, Sprite newSprite) {
@@ -86,6 +91,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
      * @return Error response message when an error occurs, or okay message when successful.
      */
     @javax.ws.rs.POST
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Consumes({javax.ws.rs.core.MediaType.APPLICATION_XML, javax.ws.rs.core.MediaType.APPLICATION_JSON})
     public Response post(Sprite newSprite) {
         if(newSprite.getId() == null){
@@ -106,12 +112,14 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
     }
 
     @javax.ws.rs.DELETE
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Path("{id}")
     public void remove(@javax.ws.rs.PathParam("id") Long id) {
         super.remove(super.find(id));
     }
 
     @javax.ws.rs.GET
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Path("{id}")
     @javax.ws.rs.Produces({javax.ws.rs.core.MediaType.APPLICATION_XML, javax.ws.rs.core.MediaType.APPLICATION_JSON})
     public Sprite find(@javax.ws.rs.PathParam("id") Long id) {
@@ -119,6 +127,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
     }
 
     @javax.ws.rs.GET
+    @RolesAllowed({"Admin", "RestGroup"})
     @Override
     @javax.ws.rs.Produces({javax.ws.rs.core.MediaType.APPLICATION_XML, javax.ws.rs.core.MediaType.APPLICATION_JSON})
     public List<Sprite> findAll() {
@@ -126,6 +135,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
     }
 
     @javax.ws.rs.GET
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Path("{from}/{to}")
     @javax.ws.rs.Produces({javax.ws.rs.core.MediaType.APPLICATION_XML, javax.ws.rs.core.MediaType.APPLICATION_JSON})
     public List<Sprite> findRange(@javax.ws.rs.PathParam("from") Integer from, @javax.ws.rs.PathParam("to") Integer to) {
@@ -137,6 +147,7 @@ public class SpriteFacadeREST extends AbstractFacade<Sprite> {
      * @return The total number of Sprites.
      */
     @javax.ws.rs.GET
+    @RolesAllowed({"Admin", "RestGroup"})
     @javax.ws.rs.Path("count")
     @javax.ws.rs.Produces(javax.ws.rs.core.MediaType.TEXT_PLAIN)
     public String countREST() {

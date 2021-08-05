@@ -26,11 +26,24 @@
         <web-resource-collection>
             <web-resource-name>webresources</web-resource-name>
             <description>Administation area</description>
-            <url-pattern>/faces/*</url-pattern>
+            <url-pattern>/faces/appUser/*</url-pattern>
+            <url-pattern>/faces/sprite/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
-            <description>Basic Constraint</description>
-            <role-name>admin</role-name>
+            <description>Admin Constraint</description>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>JSFConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>webresources</web-resource-name>
+            <description>JSF area</description>
+            <url-pattern>/faces/sprite/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>JSF Constraint</description>
+            <role-name>JsfGroup</role-name>
         </auth-constraint>
     </security-constraint>
 </web-app>
