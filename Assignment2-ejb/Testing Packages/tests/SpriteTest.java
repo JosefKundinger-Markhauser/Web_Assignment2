@@ -136,5 +136,4 @@ public class SpriteTest {
         assertEquals(x, 10);
         assertEquals(y, 90);
     }
-
 }
