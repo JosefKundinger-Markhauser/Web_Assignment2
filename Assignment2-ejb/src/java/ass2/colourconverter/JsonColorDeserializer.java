@@ -12,8 +12,11 @@ import javax.json.bind.serializer.JsonbDeserializer;
 import javax.json.stream.JsonParser;
 
 /**
- *
- * @author Josef
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 2.0
+ * 
+ * This class is used for converting from JSON to color for the REST API.
  */
 public class JsonColorDeserializer implements JsonbDeserializer<Color>{
 

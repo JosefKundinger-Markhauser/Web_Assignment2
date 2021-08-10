@@ -10,8 +10,11 @@ import javax.ejb.Stateful;
 import javax.ejb.Stateless;
 
 /**
- *
- * @author tgk
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 2.0
+ * 
+ * This class sets up a new sprite session game.
  */
 @Stateful
 public class SpriteSession implements SpriteSessionRemote {

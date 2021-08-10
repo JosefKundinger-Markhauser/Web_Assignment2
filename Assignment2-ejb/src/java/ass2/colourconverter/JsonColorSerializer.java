@@ -11,8 +11,11 @@ import javax.json.bind.serializer.SerializationContext;
 import javax.json.stream.JsonGenerator;
 
 /**
- *
- * @author Josef
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 2.0
+ * 
+ * This class is used for converting colors to JSON for the REST API.
  */
 public class JsonColorSerializer implements JsonbSerializer<Color> {
 
