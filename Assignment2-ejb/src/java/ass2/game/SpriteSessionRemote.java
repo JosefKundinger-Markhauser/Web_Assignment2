@@ -11,8 +11,11 @@ import java.util.List;
 import javax.ejb.Remote;
 
 /**
- *
- * @author tgk
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 2.0
+ * 
+ * This is the sprite interface class. 
  */
 @Remote
 public interface SpriteSessionRemote {

@@ -18,6 +18,14 @@ import javax.faces.model.DataModel;
 import javax.faces.model.ListDataModel;
 import javax.faces.model.SelectItem;
 
+/** 
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 2.0
+ * 
+ * This class is the controller for the JSF pages for the AppUser. 
+ */
+
 @Named("appUserController")
 @SessionScoped
 public class AppUserController implements Serializable {

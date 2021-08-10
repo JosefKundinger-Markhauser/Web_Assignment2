@@ -11,8 +11,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
- *
- * @author Josef
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 2.0
+ * 
+ * This class is used for converting colors to and from XML for the REST API. 
  */
 public class ColorAdapter extends XmlAdapter<ColorAdapter.ColorValueType, Color> {
     

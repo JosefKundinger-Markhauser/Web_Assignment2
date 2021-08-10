@@ -24,7 +24,7 @@ import javax.faces.model.SelectItem;
  * @author Patrick Czermak
  * @version 2.0
  * 
- * This class is the controller for the JSF pages.
+ * This class is the controller for the JSF pages for the Sprite.
  */
 @Named("spriteController")
 @SessionScoped
