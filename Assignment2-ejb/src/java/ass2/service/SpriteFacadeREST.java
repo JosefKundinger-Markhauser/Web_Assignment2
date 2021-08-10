@@ -22,6 +22,7 @@ import javax.ws.rs.core.Response;
  * @version 2.0
  * 
  * This class implements a RESTFUL API.
+ * This class also handles the authentication for any rest request.
  */
 @javax.ejb.Stateless
 @javax.ws.rs.Path("ass2.entity.sprite")

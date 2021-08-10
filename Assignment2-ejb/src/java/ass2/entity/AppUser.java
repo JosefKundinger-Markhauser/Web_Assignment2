@@ -23,7 +23,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Josef
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 1.0
+ * 
+ * This class is an entity that represents an app user.
  */
 @Entity
 @Table(name = "appuser")
@@ -54,22 +58,43 @@ public class AppUser implements Serializable {
     @Column
     private String groupName; 
 
+    /**
+     * 
+     * @return userId
+     */
     public String getUserId() {
         return userId;
     }
 
+    /**
+     * 
+     * @return Nothing
+     */
     public String getPassword() {
         return null;
     }
 
+    /**
+     * 
+     * @return groupName
+     */
     public String getGroupName() {
         return groupName;
     }
 
+    /**
+     * 
+     * @param userId The userId to be set.
+     */
     public void setUserId(String userId) {
         this.userId = userId;
     }
 
+    /**
+     * This function takes a string password value and encrypts it for storage.
+     * 
+     * @param password The new password that is being set.
+     */
     public void setPassword(String password) {
         
         if(password == null || password.length() == 0){
@@ -84,6 +109,10 @@ public class AppUser implements Serializable {
         this.password = passwordHash.generate(password.toCharArray());
     }
 
+    /**
+     * 
+     * @param groupName The group name to be set
+     */
     public void setGroupName(String groupName) {
         this.groupName = groupName;
     }

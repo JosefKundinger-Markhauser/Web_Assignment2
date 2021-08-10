@@ -17,6 +17,9 @@ import org.junit.Test;
  *
  * @author Joey Kundinger-Markhauser
  * @author Patrick Czermak
+ * @version 1.0
+ * 
+ * This class is used to test the AppUser Entity.
  */
 public class AppUserTest {
 
@@ -39,6 +42,9 @@ public class AppUserTest {
     public void tearDown() {
     }
 
+    /*
+    * This Tests sets and gets the userID.
+    */
     @Test
     public void userIdTest() {
         System.out.println("Testing userId");
@@ -49,6 +55,9 @@ public class AppUserTest {
         assertTrue(setTest == getTest);
     }
     
+    /*
+    * This Tests sets and gets the groupName.
+    */
     @Test
     public void groupNameTest() {
         System.out.println("Testing groupName");

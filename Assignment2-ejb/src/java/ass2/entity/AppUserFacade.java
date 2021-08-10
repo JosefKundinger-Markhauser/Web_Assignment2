@@ -13,7 +13,11 @@ import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author Josef
+ * @author Joey Kundinger-Markhauser
+ * @author Patrick Czermak
+ * @version 1.0
+ * 
+ * This class holds the EntityManager object for the AppUser
  */
 @Stateless
 public class AppUserFacade extends AbstractFacade<AppUser> {
