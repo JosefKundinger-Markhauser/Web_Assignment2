@@ -19,6 +19,9 @@ import org.junit.Test;
  *
  * @author Joey Kundinger-Markhauser
  * @author Patrick Czermak
+ * @version 1.0
+ * 
+ * This class is used to test the Sprite Entity.
  */
 public class SpriteTest {
 
@@ -41,6 +44,9 @@ public class SpriteTest {
     public void tearDown() {
     }
 
+    /*
+    * This Tests sets and gets the panelWidth.
+    */
     @Test
     public void panelWidthTest() {
         System.out.println("Testing panelWidth");
@@ -51,6 +57,9 @@ public class SpriteTest {
         assertEquals(setTest, getTest);
     }
 
+    /*
+    * This Tests sets and gets the panelHeight.
+    */
     @Test
     public void panelHeightTest() {
         System.out.println("Testing panelHeight");
@@ -61,6 +70,9 @@ public class SpriteTest {
         assertEquals(setTest, getTest);
     }
 
+    /*
+    * This Tests sets and gets the x.
+    */
     @Test
     public void xTest() {
         System.out.println("Testing x");
@@ -71,6 +83,9 @@ public class SpriteTest {
         assertEquals(setTest, getTest);
     }
 
+    /*
+    * This Tests sets and gets the y.
+    */
     @Test
     public void yTest() {
         System.out.println("Testing y");
@@ -81,6 +96,9 @@ public class SpriteTest {
         assertEquals(setTest, getTest);
     }
 
+    /*
+    * This Tests sets and gets the dx.
+    */
     @Test
     public void dxTest() {
         System.out.println("Testing dx");
@@ -91,6 +109,9 @@ public class SpriteTest {
         assertEquals(setTest, getTest);
     }
 
+    /*
+    * This Tests sets and gets the dy.
+    */
     @Test
     public void dyTest() {
         System.out.println("Testing dy");
@@ -101,6 +122,9 @@ public class SpriteTest {
         assertEquals(setTest, getTest);
     }
     
+    /*
+    * This Tests sets and gets the Color.
+    */
     @Test
     public void colorTest() {
         System.out.println("Testing dy");
@@ -111,6 +135,10 @@ public class SpriteTest {
         assertTrue(setTest == getTest);
     }
 
+    /*
+    * This Test makes suer that the Move function moves the x and y values 
+    * based on the dx and dy values.
+    */
     @Test
     public void moveTest() {
         System.out.println("Testing move");
